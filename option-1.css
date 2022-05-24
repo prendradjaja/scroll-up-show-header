@@ -12,4 +12,9 @@ h1 {
   position: sticky;
   top: 0;
   width: 100%;
+  transition: top 0.5s;
+}
+
+.header.hidden {
+  top: -30px;
 }
