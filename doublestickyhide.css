@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin-block-start: 0;
+}
+
+.header {
+  background: linear-gradient(lightgray, gray);
+  height: 30px;
+  width: 100%;
+}
+
+.subheader {
+  background: linear-gradient(lavender, purple);
+  height: 30px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
