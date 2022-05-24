@@ -14,9 +14,7 @@ document.addEventListener('scroll', () => {
 });
 
 function onScrollUp() {
-  if (document.body.scrollTop > 30) {
-    $('.header').classList.remove('hidden');
-  }
+  $('.header').classList.remove('hidden');
 }
 
 function onScrollDown() {
