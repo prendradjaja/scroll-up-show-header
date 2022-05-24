@@ -1,0 +1,28 @@
+#extra-header {
+  position: fixed;
+  width: 100%;
+  top: -30px;
+  transition: 0.5s linear top;
+}
+
+#extra-header.visible {
+  top: 0;
+}
+
+.header.floating {
+  animation-name: myanim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myanim {
+  from {
+    position: sticky;
+    top: -30px;
+  }
+
+  to {
+    position: sticky;
+    top: 0px;
+  }
+}
