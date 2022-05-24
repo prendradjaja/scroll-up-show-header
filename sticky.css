@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin-block-start: 0;
+}
+
+.header {
+  background: linear-gradient(lightgray, gray);
+  height: 30px;
+  opacity: 0.5;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
