@@ -7,7 +7,7 @@ let useCutoff = false;
 $('h1').innerText = location.pathname + location.hash;
 
 if (location.hash === '#use-cutoff') {
-  $('h1').innerText += ' *';
+  $('h1').innerText += ' ☑';
   useCutoff = true;
 }
 
