@@ -1,29 +1,51 @@
-<iframe
-  src="./static.html#"
-  width="400"
-  height="700"
-></iframe>
+<style>
+  body {
+    display: flex;
+  }
 
-<iframe
-  src="./sticky.html#"
-  width="400"
-  height="700"
-></iframe>
+  .left-pane {
+    border-right: 10px solid red;
+    margin-right: 30px;
+  }
 
-<iframe
-  src="./stickyplus.html#"
-  width="400"
-  height="700"
-></iframe>
+  body > * {
+    flex-basis: 50%;
+  }
 
-<iframe
-  src="./fixedplus.html#"
-  width="400"
-  height="700"
-></iframe>
+</style>
 
-<iframe
-  src="./doublesticky.html#"
-  width="400"
-  height="700"
-></iframe>
+<body>
+  <div class="left-pane">
+    <iframe
+      src="./static.html#"
+      width="400"
+      height="700"
+    ></iframe>
+
+    <iframe
+      src="./sticky.html#"
+      width="400"
+      height="700"
+    ></iframe>
+
+    <iframe
+      src="./doublesticky.html#"
+      width="400"
+      height="700"
+    ></iframe>
+  </div>
+
+  <div>
+    <iframe
+      src="./stickyplus.html#"
+      width="400"
+      height="700"
+    ></iframe>
+
+    <iframe
+      src="./fixedplus.html#"
+      width="400"
+      height="700"
+    ></iframe>
+  </div>
+</body>
