@@ -2,7 +2,14 @@ const $ = s => document.querySelector(s);
 
 let lastScrollTop = 0;
 
+let useCutoff = false;
+
 $('h1').innerText = location.pathname + location.hash;
+
+if (location.hash === '#use-cutoff') {
+  $('h1').innerText += ' *';
+  useCutoff = true;
+}
 
 document.addEventListener('scroll', () => {
   if (document.body.scrollTop < lastScrollTop) {
@@ -18,7 +25,11 @@ function onScrollUp() {
 }
 
 function onScrollDown() {
-  // if (document.body.scrollTop > 30) { // TODO add an option to enable/disable this check?
+  if (!useCutoff) {
     $('.header').classList.add('hidden');
-  // }
+  } else {
+    if (document.body.scrollTop > 30) {
+      $('.header').classList.add('hidden');
+    }
+  }
 }
